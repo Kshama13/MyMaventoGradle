@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/Kshama13/MyMaventoGradle.git'
+                git branch: 'master', url: 'https://github.com/Samiksha201104/MyMavenToGradle.git'
             }
         }
 
@@ -22,7 +22,7 @@ pipeline {
 
         stage('Run Application') {
             steps {
-                sh 'java -cp build/libs/MyMaventoGradleApp-1.0-SNAPSHOT.jar com.example.App'
+                sh 'java -cp build/libs/MyMavenApp-1.0-SNAPSHOT.jar com.example.App'
             }
         }
     }
