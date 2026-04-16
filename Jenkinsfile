@@ -22,7 +22,7 @@ pipeline {
 
         stage('Run Application') {
             steps {
-                sh 'java -cp build/libs/MyMavenApp-1.0-SNAPSHOT.jar com.example.App'
+                sh 'java -cp build/libs/MyMaventoGradleApp-1.0-SNAPSHOT.jar com.example.App'
             }
         }
     }
